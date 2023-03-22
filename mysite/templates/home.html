@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+</head>
+<body bgcolor='grey'>
+{% block content %}
+
+<form action='add'>
+
+    <h1>ADDITION</h1>
+    Enter the value : <input type ='text' name="num1"><br></br>
+    Enter the value : <input type ='text' name="num2"><br></br>
+
+    <input type='submit'>
+</form>
+
+<form action ='sub'>
+    <h1>SUBTRACTION</h1>
+    Enter the value : <input type ='text' name="num1"><br></br>
+    Enter the value : <input type ='text' name="num2"><br></br>
+
+    <input type="submit">
+</form>
+
+
+<form action ='mul'>
+    <h1>MULTIPLICATION</h1>
+    Enter the value :<input type ='text' name="num1"><br></br>
+    Enter the value :<input type ='text' name="num2"><br></br>
+
+    <input type="submit">
+</form>
+
+<form action ='div'>
+    <h1>DIVISION</h1>
+    Enter the value : <input type ='text' name ="num1"><br></br>
+    Enter the value : <input type ='text' name ="num2"><br></br>
+
+    <input type="submit">
+</form>
+
+    {% endblock %}
+
+    <h1>Result :{{result}}</h1>
+
+</body>
+</html>
